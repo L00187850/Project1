@@ -12,7 +12,7 @@ import subprocess
 
 def get_user_info():
     """
-    Fetch specific details about the logged-in user.
+    Function to get specific details about the logged-in user.
     """
     return {
         "Username": getpass.getuser(),
@@ -25,7 +25,7 @@ def get_user_info():
 
 def get_current_time():
     """
-    Fetch the current time details.
+    Function to get the current time details.
     """
     now = datetime.now()
     return {
@@ -39,7 +39,7 @@ def get_current_time():
 
 def get_directory_size(path):
     """
-    Calculate the total size of files in the given directory.
+    Function to obtain the total size of the profile.
     """
     total_size = 0
     for dirpath, _, filenames in os.walk(path):
@@ -53,7 +53,7 @@ def get_directory_size(path):
 
 def get_last_login():
     """
-    Retrieve the last login information for the logged-in user.
+    Function to get the last known login information for the logged-in user.
     """
     try:
         username = getpass.getuser()

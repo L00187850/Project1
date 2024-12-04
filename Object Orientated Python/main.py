@@ -15,12 +15,7 @@ user_info = user_details.get_user_info()
 time_info = user_details.get_current_time()
 home_directory = user_info.get("Home Directory: ", None)
 last_login = user_details.get_last_login()
-"""
-user_info = get_user_info()
-time_info = get_current_time()
-home_directory = user_info.get("Home Directory", None)
-last_login = get_last_login()
-"""
+
 def main():
     """
     Displays user information, current time, and profile size.
